@@ -4,8 +4,8 @@ the integration of reinforcement learning (RL) into teaching LLMs how to
 translate natural language instructions along with a database schema to
 (often) executable and accurate SQL. This tool can be used to help users
 without a technical background as they will be able to easily interact with
-databases. We employ the OpenLLaMA v2 model at a size of ∼ 3 Bil
-lion parameters and train in two phases. We initially pretrain a supervised
+databases. We employ the OpenLLaMA v2 model at a size of ∼ 3 Billion parameters 
+and train in two phases. We initially pretrain a supervised
 fine-tuning objective on the disjoint subset of the sql-create-context dataset
 against the Spider dataset and then further trained on synthetic preference
 data generated from the intersection of sql-create-context and the Spider
