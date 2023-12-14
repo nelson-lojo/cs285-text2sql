@@ -20,6 +20,6 @@ We plot DPO rewards as detailed in [1] above. The dpo-rewards-chosen
 other signals. The dpo-rewards-reject (brown line) represents the rewards
 associated with rejected actions or hypotheses. The rate of rejection is
 decreasing over time which could be a sign of learning and improvement.
-This is visited again in the Results section.
+This is visited again in the Results section. Please read our paper for more details!
 
 Authors: Abirami Sabbani and Nelson Lojo
