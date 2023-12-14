@@ -34,15 +34,15 @@ def get_similarity(candidate, reference) -> float:
 
     return similarity
 
-def get_row_diff(candidate_rows, solution_rows) -> float:
+def get_row_diff(candidate_rows, solution_rows, eps=1e-5) -> float:
     candidate_set = set(candidate_rows)
     solution_set = set(solution_rows)
     
     num_excess_rows = len(candidate_set - solution_set)
-    excess_proportion = num_excess_rows / len(candidate_set)
+    excess_proportion = num_excess_rows / (len(candidate_set) + eps)
     
     num_missing_rows = len(solution_set - candidate_set)
-    missing_proportion = num_missing_rows / len(solution_set)
+    missing_proportion = num_missing_rows / (len(solution_set) + eps)
     return (1-excess_proportion + 1-missing_proportion) / 2
 
 def get_reward(db_name: str, candidate_query: str, solution_query: str):
