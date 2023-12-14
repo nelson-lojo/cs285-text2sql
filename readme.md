@@ -9,8 +9,8 @@ and train in two phases. We initially pretrain a supervised
 fine-tuning objective on the disjoint subset of the sql-create-context dataset
 against the Spider dataset and then further trained on synthetic preference
 data generated from the intersection of sql-create-context and the Spider
-training split using a modern LLM RL technique (DPO). From the rein-
-forcement learning perspective, we performed our second phase of training
+training split using a modern LLM RL technique (DPO). From the reinforcement learning 
+perspective, we performed our second phase of training
 in a contextual bandit setting, where our designed prompt served as a con-
 text and the generated SQL query was the bandit selection. Our approach
 is novel as we explore a new technique for generating preference data and
